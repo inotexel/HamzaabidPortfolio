@@ -1,0 +1,128 @@
+*{
+  list-style-type:none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 1000;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.scrolled {
+  padding: 15px 0;
+  background: var(--bg-card);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-accent);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: var(--glass-bg);
+  padding: 8px 8px 8px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.navLink:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+}
+
+.themeToggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  transition: var(--transition);
+}
+
+.themeToggle:hover {
+  transform: rotate(30deg) scale(1.1);
+}
+
+.mobileActions {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .desktopMenu { display: none; }
+  .mobileActions { display: flex; gap: 15px; align-items: center; }
+  
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .mobileNavLinks a {
+    font-size: 2.5rem;
+    font-family: var(--font-accent);
+    font-weight: 700;
+  }
+}
+
