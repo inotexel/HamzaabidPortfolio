@@ -35,7 +35,7 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className={styles.logo}
         >
-          <span className="text-gradient">Hamza.</span>
+          <img src="/hamza-lgo.png" alt="Hamza Abid Logo" className={styles.logoImg} />
         </motion.div>
 
         <div className={styles.desktopMenu}>

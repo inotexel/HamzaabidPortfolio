@@ -30,10 +30,20 @@
 }
 
 .logo {
-  font-family: var(--font-accent);
-  font-size: 1.8rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logoImg:hover {
+  transform: scale(1.1);
 }
 
 .desktopMenu {
