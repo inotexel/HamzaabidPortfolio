@@ -11,7 +11,7 @@ const experienceData = [
   {
     id: 0,
     shortName: 'Upwork',
-    role: 'Top Rated AI & Full Stack Solution Provider',
+    role: 'Top Rated AI/ML Engineer and Full Stack Engineer.',
     company: 'Upwork (Freelance)',
     duration: '2023 – Present',
     location: 'Remote',
@@ -20,7 +20,6 @@ const experienceData = [
     faqs: [
       { q: "What is your Upwork success rate?", a: "I maintain a Top Rated status with 100% client satisfaction on complex AI and Web projects." },
       { q: "How do we start a project?", a: "We can start with a brief consultation to define requirements, followed by a detailed project roadmap." },
-      { q: "Do you offer post-project support?", a: "Absolutely. I provide 3 months of free maintenance and technical support for every project I deliver." },
       { q: "What technologies do you specialize in?", a: "My core expertise lies in React.js, Next.js, FastAPI, and advanced LLM integrations using RAG." }
     ]
   },

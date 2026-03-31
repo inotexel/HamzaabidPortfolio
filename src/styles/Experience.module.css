@@ -415,8 +415,8 @@
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    /* background: var(--bg-card); */
+    /* border: 1px solid var(--border); */
   }
 
   .tabBtn {

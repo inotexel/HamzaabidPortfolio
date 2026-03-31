@@ -57,7 +57,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className={styles.subtitle}
           >
-            Hi! I'm Hamza abid a Team Lead AI Engineer at InoTexel|TopRated on Upwork | Building Scalable AI & Full Stack Solutions
+            Hi! I'm Hamza abid a Team Lead AI Engineer at InoTexel | TopRated on Upwork | Building Scalable AI & Full Stack Engineer
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -65,10 +65,19 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className={styles.cta}
           >
-            <button className={styles.primaryBtn}>
-              Explore Work
-              <div className={styles.btnGlow}></div>
-            </button>
+            <a href="#projects">
+              <button className={styles.primaryBtn}>
+                Explore Work
+                <div className={styles.btnGlow}></div>
+              </button>
+            </a>
+            <a href="#contact">
+              <button className={styles.primaryBtn}>
+                Hire Me
+                <div className={styles.btnGlow}></div>
+              </button>
+            </a>
+
           </motion.div>
         </div>
 

@@ -37,7 +37,7 @@ const Skills = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>
-            Technical <span className="text-gradient">Arsenal</span>
+            Technical <span className="text-gradient">Skills</span>
           </h2>
           <p className={styles.subtitle}>
             Specialized in building end-to-end AI solutions with cutting-edge technologies.

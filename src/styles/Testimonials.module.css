@@ -1,0 +1,233 @@
+.testimonials {
+  padding: 120px 0;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: var(--font-accent);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Masonry layout to prevent empty vertical spaces */
+.grid {
+  column-count: 3;
+  column-gap: 30px;
+  width: 100%;
+}
+
+
+/* Strictly Clean Animated Border */
+.cardWrapper {
+  position: relative;
+  border-radius: 24px;
+  padding: 2px;
+  /* This defines the border thickness */
+  overflow: hidden;
+  background: var(--border);
+  /* Fallback clean border */
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: block;
+  height: max-content;
+  /* Ensure height is just what it needs to be */
+  break-inside: avoid;
+  /* Prevents card from splitting across columns */
+  margin-bottom: 30px;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-8px);
+  background: transparent;
+  /* Reveal the animated gradient underneath */
+}
+
+/* This is the rotating gradient "border" background */
+.cardWrapper::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg,
+      transparent 0%,
+      var(--primary) 20%,
+      var(--secondary) 50%,
+      var(--accent) 80%,
+      transparent 100%);
+  animation: rotate 4s linear infinite;
+  z-index: 0;
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.cardWrapper:hover::before {
+  opacity: 1;
+  /* Show strictly on hover */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  position: relative;
+  /* SOLID background to ensure the rotating gradient is ONLY visible on the border */
+  background: var(--bg-card);
+  border-radius: 22px;
+  /* Slightly smaller to fit inside padding */
+  padding: 20px;
+  flex: 1;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+  height: max-content;
+}
+
+[data-theme='light'] .card {
+  background: #ffffff;
+}
+
+[data-theme='dark'] .card {
+  background: #0f172a;
+}
+
+.cardContent {
+  position: relative;
+}
+
+.ratingStars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.star {
+  color: #fbbf24;
+  font-size: 1.3rem;
+}
+
+.quoteIcon {
+  font-size: 4rem;
+  color: var(--primary);
+  opacity: 0.1;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 30px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.clientInfo {
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.actionBtn {
+  background: var(--primary);
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .actionBtn {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1.5px solid var(--primary);
+  color: #fff;
+}
+
+[data-theme='light'] .actionBtn {
+  background: var(--primary);
+  color: #fff;
+}
+
+.actionBtn:hover {
+  background: var(--secondary);
+  box-shadow: 0 4px 15px var(--primary-glow);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    column-count: 1;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}

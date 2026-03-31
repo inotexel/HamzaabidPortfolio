@@ -1,12 +1,44 @@
 .skills {
   padding: 120px 0;
   background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 50%;
+  height: 80%;
+  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+  opacity: 0.15;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 50%;
+  height: 80%;
+  background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+  opacity: 0.1;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
