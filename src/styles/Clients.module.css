@@ -109,7 +109,9 @@
   .title {
     font-size: 2rem;
   }
-
+  .container {
+    padding: 0 20px;
+  }
   .grid {
     grid-template-columns: 1fr;
   }

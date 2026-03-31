@@ -96,6 +96,12 @@
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+
   .logoItem {
     width: 120px;
   }
@@ -108,7 +114,6 @@
     0% {
       transform: translateX(0);
     }
-
     100% {
       transform: translateX(calc(-160px * 8));
     }

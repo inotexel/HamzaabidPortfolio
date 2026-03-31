@@ -216,3 +216,15 @@
   .subtitle { margin-inline: auto; }
   .imageCard { width: 320px; height: 420px; }
 }
+
+@media (max-width: 768px) {
+  .title { font-size: 2.8rem; line-height: 1.2; word-break: break-word; }
+  .subtitle { font-size: 1rem; margin-bottom: 30px; }
+  .container { padding: 0 20px; gap: 40px; }
+  .cta { flex-direction: row; flex-wrap: wrap; justify-content: center; width: 100%; gap: 15px; }
+  .cta a { flex: 1; min-width: 140px; }
+  .primaryBtn, .secondaryBtn { width: 100%; padding: 14px 10px; font-size: 0.95rem; }
+  .imageCard { width: 280px; height: 350px; }
+  .floating { padding: 8px 16px; font-size: 0.8rem; }
+}
+

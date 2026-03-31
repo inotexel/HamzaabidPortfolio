@@ -160,6 +160,10 @@
 }
 
 @media (max-width: 768px) {
-  .title { font-size: 2.5rem; }
+  .title { font-size: 2.2rem; }
+  .container { padding: 0 20px; }
   .grid { grid-template-columns: 1fr; }
+  .imageWrapper { height: 200px; }
+  .info { padding: 20px; }
+  .projectTitle { font-size: 1.4rem; }
 }

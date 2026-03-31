@@ -134,6 +134,10 @@
 }
 
 @media (max-width: 768px) {
-  .title { font-size: 2.5rem; }
-  .stats { flex-direction: column; gap: 30px; }
+  .title { font-size: 2.2rem; }
+  .container { padding: 0 20px; }
+  .stats { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .statItem { align-items: center; min-width: 120px; }
+  .statNumber { font-size: 2rem; }
+  .description { font-size: 1rem; }
 }
