@@ -7,9 +7,9 @@ import iqPromptLogo from '../../public/assets/logo-iq.png';
 
 
 const clientList = [
-  { id: 1, name: 'AI/ML Lead Defizer',  type: 'Technology', image: defizerLogo },
-  { id: 2, name: 'AI/ML Lead Inotexel',  type: 'Technology', image: inotexelLogo },
-  { id: 3, name: 'AI/ML Lead IQ Prompt', type: 'Technology', image: iqPromptLogo },
+  { id: 1, name: 'Team Lead AI/ML Defizer',  type: 'Technology', image: defizerLogo },
+  { id: 2, name: 'CTO Inotexel',  type: 'Technology', image: inotexelLogo },
+  { id: 3, name: 'Team Lead AI/ML IQ Prompt', type: 'Technology', image: iqPromptLogo },
 ];
 
 const Clients = () => {
