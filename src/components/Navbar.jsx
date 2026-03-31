@@ -3,7 +3,7 @@ import { useTheme } from '../context/ThemeContext';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import styles from '../styles/Navbar.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import hamzaLogo from '../../public/assets/hamza-lgo.png'
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className={styles.logo}
         >
-          <img src="/hamza-lgo.png" alt="Hamza Abid Logo" className={styles.logoImg} />
+          <img src={hamzaLogo} alt="Hamza Abid Logo" className={styles.logoImg} />
         </motion.div>
 
         <div className={styles.desktopMenu}>

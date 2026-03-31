@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/AboutMe.module.css';
 import { motion } from 'framer-motion';
+import hamzaImage from '../../public/assets/hamza-image.png'
 import { toast } from 'react-hot-toast';
 
 const AboutMe = () => {
@@ -19,7 +20,7 @@ const AboutMe = () => {
         >
           <div className={styles.profileHeader}>
             <div className={styles.imageWrapper}>
-              <img src="/hamza-image.png" alt="Hamza Abid" className={styles.avatar} />
+              <img src={hamzaImage} alt="Hamza Abid" className={styles.avatar} />
             </div>
           </div>
 

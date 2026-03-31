@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import styles from '../styles/Hero.module.css';
+import hamzaImage from '../../public/assets/hamza-image.png'
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -74,7 +75,7 @@ const Hero = () => {
         <div className={styles.visual}>
           <div className={styles.blob}></div>
           <div className={styles.imageCard}>
-            <img src="/hamza-image.png" alt="Hamza Abid" className={styles.profileImg} />
+            <img src={hamzaImage} alt="Hamza Abid" className={styles.profileImg} />
             <div className={styles.overlay}></div>
           </div>
           {/* Floating elements */}
