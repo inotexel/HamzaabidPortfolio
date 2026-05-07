@@ -53,7 +53,7 @@ const About = () => {
                 <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=500" alt="Code" />
               </div>
               <div className={`${styles.imgBox} ${styles.box2}`}>
-                <img src="https://images.unsplash.com/photo-1620712943543-bcc4638ef80d?auto=format&fit=crop&q=80&w=500" alt="AI" />
+                <img src="https://unsplash.com/photos/person-coding-on-laptop-overlooking-city-lights-at-night-nPJFU_zTVhA" alt="AI" />
               </div>
               <div className={`${styles.imgBox} ${styles.box3}`}>
                 <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=500" alt="Work" />
