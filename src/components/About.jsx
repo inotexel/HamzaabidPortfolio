@@ -28,7 +28,7 @@ const About = () => {
             </p>
             <div className={styles.stats}>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>2+</span>
+                <span className={styles.statNumber}>4+</span>
                 <span className={styles.statLabel}>Years Experience</span>
               </div>
               <div className={styles.statItem}>
