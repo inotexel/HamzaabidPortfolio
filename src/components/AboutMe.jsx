@@ -28,7 +28,7 @@ const AboutMe = () => {
             <p className={styles.intro}>
               My name is <strong>Hamza Abid</strong>. I'm a results-driven AI Engineer and Full Stack Developer 
               based in Lahore, Pakistan. I'm passionate about artificial intelligence, computer vision, 
-              machine learning and deep learning, delivering innovative solutions to real-world challenges.
+              machine learning, and deep learning, delivering innovative solutions to real-world challenges.
             </p>
             
             <p className={styles.workStatus}>
